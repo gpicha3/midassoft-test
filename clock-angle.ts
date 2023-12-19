@@ -1,4 +1,4 @@
-const getClockAngle = (time) => {
+const getClockAngle = (time :string) => {
     const [hour, minute] = time.split(":").map(Number);
     let hourAngle = (hour % 12 + minute / 60) * 30;
     let minuteAngle = minute * 6;
